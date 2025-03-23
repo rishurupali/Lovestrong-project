@@ -1,0 +1,19 @@
+{
+  "name": "lovestrong-project",
+  "version": "1.0.0",
+  "main": "login.test.js",
+  "scripts": {
+    "test": "npx wdio run wdio.conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@wdio/local-runner": "^9.12.1",
+    "@wdio/mocha-framework": "^9.12.1",
+    "@wdio/spec-reporter": "^9.11.0",
+    "chromedriver": "^134.0.5",
+    "wdio-chromedriver-service": "^8.1.1"
+  }
+}
