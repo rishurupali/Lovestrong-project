@@ -1,7 +1,7 @@
 export const config: WebdriverIO.Config = {
     runner: 'local',
 
-    specs: ['./test/specs/**/*.js'], // Use './test/specs/**/*.ts' if using TypeScript
+    specs: ['./test/specs/**/*.ts'], // Use TypeScript file extension
 
     capabilities: [{
         browserName: 'chrome',
@@ -30,4 +30,14 @@ export const config: WebdriverIO.Config = {
     afterSession: async function () {
         console.log('Tests completed. Closing WebDriverIO session...');
     },
+};
+
+// TypeScript Configuration
+export const tsconfig = {
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "CommonJS",
+        "strict": true,
+        "types": ["@wdio/globals"]
+    }
 };
